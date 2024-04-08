@@ -79,3 +79,76 @@ Vary: Accept
 
 ### Screenshot of Failed POST Method for Duplicate Hotel:
 ![alt text](API_FAILED_RESPONSE_POST.png)
+
+## How to Install and Run the Application
+
+### Prerequisites
+
+Before you proceed, ensure you have the following installed on your local machine:
+
+- Python (version 3.6 or higher)
+- Git (optional, for cloning the repository)
+- SQLite (or any other supported database)
+
+### Installation
+
+1. **Clone the Repository**:
+   - Open a terminal or command prompt.
+   - Run the following command to clone the repository to your local machine:
+
+     ```bash
+     git clone https://github.com/A00431008/hotels_api
+     ```
+
+2. **Navigate to the Project Directory**
+
+3. **Create and Activate Virtual Environment** (optional but recommended):
+   - Create a virtual environment using:
+
+     ```bash
+     python -m venv venv
+     ```
+
+   - Activate the virtual environment:
+     - On Windows:
+
+       ```bash
+       venv\Scripts\activate
+       ```
+
+     - On macOS and Linux:
+
+       ```bash
+       source venv/bin/activate
+       ```
+
+4. **Install Dependencies**:
+   - Install the required dependencies by running:
+
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+### Running the Application
+
+1. **Apply Migrations**:
+   - Apply migrations to create the database schema by running:
+
+     ```bash
+     python manage.py migrate
+     ```
+
+2. **Start the Development Server**:
+   - Start the development server by running:
+
+     ```bash
+     python manage.py runserver
+     ```
+
+3. **Access the Application**:
+   - Access the application in your web browser at `http://127.0.0.1:8000/`.
+
+### Testing the APIs
+
+- Use tools like [Postman](https://www.postman.com/) or [curl](https://curl.se/) to test the APIs provided by the application. This can directly by tested from the web browser as well.
+- Refer to the API documentation provided above for endpoint URLs and request/response formats.
